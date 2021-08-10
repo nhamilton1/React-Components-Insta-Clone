@@ -54,6 +54,36 @@ const dummyData = [
             },
         ],
     },
+    {
+        id: 3,
+        username: "Vegeta",
+        thumbnailUrl: 'https://icon2.cleanpng.com/20180320/sqe/kisspng-twitch-computer-icons-streaming-media-youtube-live-tv-twitch-icon-5ab19172461392.001176751521586546287.jpg',
+        imageUrl: 'https://static3.srcdn.com/wordpress/wp-content/uploads/2019/06/Vegeta-Its-Over-9000-Dragon-Ball-Z.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5',
+        likes: 9001,
+        timestamp: "July 15th 2017, 03:12:09 pm",
+        comments: [
+            {
+                id: 36,
+                username: "Krillin",
+                text: "lol",
+            },
+            {
+                id: 37,
+                username: "Goku",
+                text: "Omg that match was crazy",
+            },
+            {
+                id: 38,
+                username: "Bulma",
+                text: ";)",
+            },
+            {
+                id: 39,
+                username: "dennis_futbol",
+                text: "It that injustice",
+            },
+        ],
+    },
 ];
 
 export default dummyData;

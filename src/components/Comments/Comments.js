@@ -4,7 +4,7 @@ import './Comments.css';
 
 const Comments = props => {
   // 🔥 Make sure the parent of Comments is passing the right props!
-  const { comments } = props;
+  const { comments, newComment } = props;
 
   return (
     <div>
@@ -14,6 +14,12 @@ const Comments = props => {
           return <Comment comment={comms} key={comms.id}/>
         })
       }
+      <form>
+        <label>
+          <input type="text" name="name" onChange={newComment}/>
+        </label>
+          <input type="submit" value="Submit" />
+      </form>
     </div>
   );
 };
