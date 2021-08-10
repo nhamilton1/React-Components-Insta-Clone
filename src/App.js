@@ -62,6 +62,8 @@ const App = () => {
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
+
+      {/* Maybe will attempt the stretch later */}
       <SearchBar />
       <Posts likePost={likePost} posts={posts}/>
 
