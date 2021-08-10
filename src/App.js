@@ -32,12 +32,23 @@ const App = () => {
         - if the `id` of the post matches `postId`, return a new post object with the desired values (use the spread operator).
         - otherwise just return the post object unchanged.
      */
-    setPosts(posts.map(id => {
-      if (id.postId === postId) {
-        return { ...id, likes: id.likes + 1}
+    // setPosts(posts.map(post => {
+    //   if (post === postId) {
+    //     return { ...post, likes: post.likes + 1}
+    //   } else{
+    //     return post;
+    //   }
+      
+    // }))
+
+    const updateLikes = posts.map(post => {
+      if (post.id === postId) {
+        return {...post, likes: post.likes +1 }
+      } else {
+        return post
       }
-      return id
-    }))
+    })
+    setPosts(updateLikes)
   };
 
   return (
