@@ -1,6 +1,7 @@
 import React from 'react';
 import Post from './Post';
 import './Posts.css';
+import App from '../../App';
 
 const Posts = (props) => {
   // 🔥 Make sure the parent of Posts is passing the right props!
