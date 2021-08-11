@@ -4,11 +4,22 @@ import './Comments.css';
 
 const Comments = props => {
   // 🔥 Make sure the parent of Comments is passing the right props!
-  const { comments } = props;
+  const { comments, newComment } = props;
 
   return (
     <div>
-      {/* map through the comments prop and render a Comment for every piece of data */}
+      {/* map through the comments prop and render a Comment for every piece of data */}.
+      {
+        comments.map((comms) => {
+          return <Comment comment={comms} key={comms.id}/>
+        })
+      }
+      <form>
+        <label>
+          <input type="text" name="name" onChange={newComment}/>
+        </label>
+          <input type="submit" value="Submit" />
+      </form>
     </div>
   );
 };
